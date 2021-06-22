@@ -102,8 +102,9 @@ button:hover{
 }
 
 input, textarea{
-    background-color: blue;
+    background-color: black;
     border: none;
     resize: none;
+    border: solid 1px lightgrey;
 
 }
