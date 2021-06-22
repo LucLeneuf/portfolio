@@ -5,7 +5,7 @@ if(isset($_POST['username'])&&!empty($_POST['username'])&&isset($_POST['email'])
    
     
     if($_POST['password']=== $_POST['confirmation']){
-        require_once('db-connect.php'); //la liaison à la base de Données se fait après les vérifications
+        require_once('db_connect.php'); //la liaison à la base de Données se fait après les vérifications
         $username=strip_tags($_POST['username']); /* Prendre le "name" */
         $email=strip_tags($_POST['email']); // strip_tag permet de sécurisé et d'éviter les injections dans le php"
         $password=strip_tags($_POST['password']);

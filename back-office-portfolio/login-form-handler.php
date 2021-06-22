@@ -1,6 +1,6 @@
 <?php
 
-require_once("db-connect.php");
+require_once("db_connect.php");
 // cherche une entrée dans la base de données (username) qui correspond avec ce que l'utilisateur a renseigné dans le forumlaire.
 $sql = 'SELECT id,username,password FROM users WHERE username=:username';
 $query = $db->prepare($sql);
