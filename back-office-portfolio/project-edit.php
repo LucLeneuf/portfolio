@@ -24,6 +24,7 @@ if ($_SESSION['username']) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>ajouter un projet</title>
 </head>
 
@@ -31,8 +32,8 @@ if ($_SESSION['username']) {
     <form action="project-edit-form-handler.php" method="post">
 
         <div>
-            <label for="input_title">Titre</label>
-            <input type="text" id="input_title" name="project_title">
+            <label for="input_title"">Titre</label>
+            <input type="text" id="input_title" placeholder="Title.." name="project_title">
         </div>
         <div>
             <label for="input_picture">picture</label>
@@ -48,7 +49,7 @@ if ($_SESSION['username']) {
         </div>
         <div>
             <label for="input_context">Contexte</label>
-            <textarea name="project_context" id="input_context" cols="30" rows="10"></textarea>
+            <textarea name="project_context" id="input_context" placeholder="Description.." cols="30" rows="10"></textarea>
         </div>
         <div>
             <label for="input_specs">Spécifications fonctionnelles</label>
@@ -69,7 +70,7 @@ if ($_SESSION['username']) {
 
 
     </form>
-    <a href="project-details.php?id=<?= $result['project_id'] ?>">Retour</a>
+    <a href="project-details.php?id=<?= $result['project_id'] ?>"></button></a>
 </body>
 
 </html>

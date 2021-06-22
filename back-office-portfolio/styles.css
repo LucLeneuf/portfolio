@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: "hammersmith";
+    src: url("../assets/fonts/HammersmithOne-Regular.ttf");
+}
+@font-face {
+    font-family: "gilroy";
+    src: url("../assets/fonts/gilroy-extrabold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    color: white;
+    background-color: black;
+    position: relative;
+    font-family: montserrat;
+}
+img{
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+}
+
+.marge{
+    margin: 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    color: white;
+}
+
+
+.title{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: "gilroy";
+    letter-spacing: 0.3vw;
+}
+
+button{
+    padding:0.6rem ;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+    font-family: "montserrat";
+}
+button:hover{
+    background-color: #e61826;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+button:hover{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.button__edit-delete{
+    display: flex;
+    column-gap: 1.5rem;
+}
+.back{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+.description{
+    max-width: 32rem;
+}
+
+
+::placeholder{
+    padding: 0.4rem;
+}
+
+input, textarea{
+    background-color: blue;
+    border: none;
+    resize: none;
+
+}
